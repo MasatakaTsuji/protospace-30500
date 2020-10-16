@@ -1,6 +1,6 @@
 class Comment < ApplicationRecord
   belongs_to :user
-  belongs_to :prototype, dependent: :destroy
+  belongs_to :prototype
 
   validates :text, presence: true
 end
