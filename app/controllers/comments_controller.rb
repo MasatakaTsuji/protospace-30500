@@ -3,8 +3,6 @@ class CommentsController < ApplicationController
     @comment = Comment.new(comment_params)
     if @comment.save
       redirect_to   prototype_path(@comment.prototype_id)
-    else
-      render :show
     end
   end
 
